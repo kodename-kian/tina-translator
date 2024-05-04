@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'reef': {
+          100: '#E6fBCC',
           400: '#8DE239',
           500: '#6EC81A',
           600: '#52A010',

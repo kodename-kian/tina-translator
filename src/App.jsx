@@ -27,7 +27,7 @@ function App() {
             The Tina Translator
           </p>
 
-          <textarea id="text" rows="6" 
+          <textarea id="text" rows="6" maxlength="500"
                     className="block p-2.5 w-1/3 text-sm rounded-md border border-gray-500 
                           focus:ring-2 focus:ring-reef-950" 
                     placeholder="How would Katrina say..."
@@ -42,7 +42,8 @@ function App() {
             Translate!
           </button>
 
-          <p id="response"> </p>
+          <div id="response"
+               className="block p-2.5 w-1/3 rounded-md border border-gray-300 text-white font-bold"> </div>
 
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { makeQuery } from './backend.jsx';
+import About from './About.jsx';
 
 function App() {
   const [input, setInput] = useState("");
@@ -23,11 +24,13 @@ function App() {
       <div className="bg-cloud bg-cover">
         <div className="flex flex-col min-h-screen justify-center items-center space-y-8">
           
+          <About />
+          
           <p className="text-5xl font-bold text-white border-1">
             The Tina Translator
           </p>
 
-          <textarea id="text" rows="6" maxlength="500"
+          <textarea id="text" rows="6" maxLength="500"
                     className="block p-2.5 w-1/3 text-sm rounded-md border border-gray-500 
                           focus:ring-2 focus:ring-reef-950" 
                     placeholder="How would Katrina say..."
@@ -43,7 +46,8 @@ function App() {
           </button>
 
           <div id="response"
-               className="block p-2.5 w-1/3 rounded-md border border-gray-300 text-white font-bold"> </div>
+               className="block p-2.5 w-1/3 rounded-md border border-gray-300 text-white font-bold"> 
+          </div>
 
         </div>
       </div>

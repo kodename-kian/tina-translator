@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import {rules} from "./rules.jsx";
 
 const openai = new OpenAI({"apiKey": import.meta.env.VITE_KEY, 
                            dangerouslyAllowBrowser: true});
@@ -12,7 +13,7 @@ export async function makeQuery(query) {
                },
                { 
                 role: "user",   
-                content: "Rules: Every vowel is replaced with a different vowel" // PLACEHOLDER PROMPT
+                content: rules
                },
                { 
                 role: "user",   
